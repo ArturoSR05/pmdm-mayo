@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">pmdm-mayo</string>
+    <string name="page_title">Clientes\n</string>
+    <string name="search">Buscar</string>
+    <string name="content_description_search">Buscar clientes</string>
+    <string name="add_client">Añadir cliente</string>
+    <string name="content_description_add_client">Botón para añadir un cliente nuevo</string>
+    <string name="add_sales">Añadir ventas\n</string>
+    <string name="content_description_add_sales">Botón para añadir nuevas ventas</string>
 </resources>
