@@ -14,8 +14,9 @@ navigation = "2.9.0"
 retrofit = "2.11.0"
 gson = "2.11.0"
 koin = "4.0.0"
+koin-annotations = "1.3.0"
 ksp = "2.0.21-1.0.27"
-lifecycle = "2.2.0"
+lifecycle = "2.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -36,7 +37,10 @@ retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", ver
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
 
 koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
-koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+koin-core = { group = "io.insert-koin", name = "koin-androidx-core", version.ref = "koin" }
+koin-viewmodel = { group = "io.insert-koin", name = "koin-androidx-viewmodel", version.ref = "koin"}
+koin-annotations = { group = "io.insert-koin", name = "koin-annotations", version.ref = "koin-annotations" }
+koin-compiler = { group = "io.insert-koin", name = "koin-ksp-compiler", version.ref = "koin-annotations" }
 
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room"}
