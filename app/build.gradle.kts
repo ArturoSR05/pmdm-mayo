@@ -35,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -58,7 +62,10 @@ dependencies {
     implementation(libs.gson)
 
     implementation(libs.koin.android)
-    implementation(libs.koin.compose)
+    implementation(libs.koin.core)
+    implementation(libs.koin.viewmodel)
+    implementation(libs.koin.annotations)
+    ksp(libs.koin.compiler)
 
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.lifecycle.livedata.ktx)
@@ -68,4 +75,8 @@ dependencies {
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+}
+
+ksp {
+    arg("KOIN_CONFIG_CHECK", "true")
 }

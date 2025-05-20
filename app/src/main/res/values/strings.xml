@@ -7,4 +7,5 @@
     <string name="content_description_add_client">Botón para añadir un cliente nuevo</string>
     <string name="add_sales">Añadir ventas\n</string>
     <string name="content_description_add_sales">Botón para añadir nuevas ventas</string>
+    <string name="eliminar">Eliminar</string>
 </resources>
